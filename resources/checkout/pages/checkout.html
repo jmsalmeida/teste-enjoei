@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="../css/style.css">
+
   <title>Enjoei</title>
 </head>
+
 <body>
   <header>
     <img src="../images/enjoei-logo.png" alt="logo-enjoei" title="logo responsivo enjoei">
   </header>
+
   <section class="enjoei-checkout">
-    <div class="enjoei-product-image">
-      <img src="../images/4419c2321c4f20aa772317c0a57da6baf081d74f.png" alt="">
-    </div> 
-    <div class="enjoei-checkout-cupons">
-      <input type="radio">teste
-      <input type="radio">teste
-    </div>
-    <div class="enjoei-checkout-resume">
-      <div>
-        <span>valor original</span>
-        <span>cupom</span>
-        <span>frete</span>
-        <span>total</span>
+    <div class="container">
+      <div class="enjoei-product-image">
+        <img src="../images/4419c2321c4f20aa772317c0a57da6baf081d74f.png" alt="">
       </div>
-      <div>
-        <span>R$120.00</span>
-        <span>- R$ 12.00</span>
-        <span>R$20.00</span>
-        <span>R$108.00</span>
+
+      <div class="enjoei-checkout-cupons">
+        <div>
+          <div>
+            <input type="radio">
+            <span>não usar cupom</span>
+          </div>
+          <div>
+            <input type="radio">
+            <span>black friday</span>
+            <span>- R$12.00</span>
+          </div>
+        </div>
       </div>
-      <button>cancelar</button>
-      <button>confirmar</button>
+
+      <div class="enjoei-checkout-resume">
+        <div class="resume-right">
+          <span>valor original</span>
+          <span>cupom</span>
+          <span>frete</span>
+          <span>total</span>
+        </div>
+        <div class="resume-left">
+          <span>R$120.00</span>
+          <span>- R$12.00</span>
+          <span>R$20.00</span>
+          <span>R$108.00</span>
+        </div>
+      </div>
+
+      <div class="checkout-buttons">
+        <button>cancelar</button>
+        <button>confirmar</button>
+      </div>
     </div>
   </section>
 </body>
+
 </html>
