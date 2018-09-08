@@ -34,15 +34,16 @@ function buildCheckout() {
         coupon.innerHTML = addCouponCheckout(dados);
         shipping.innerHTML = `R$ ${dados.checkout.shippingPrice.toFixed(2)}`;
         totalPrice.innerHTML = `R$ ` + calcTotalPrice(dados.checkout.totalPrice, dados.checkout.availableCoupons[0].discount).toFixed(2);
-    });
+    }).catch(error => console.error('Error:', error));
+    
 }
 
 function sendPost() {
     let idCheckout;
     get(`/api/checkouts/:checkoutId`).then(data => {
         idCheckout = data.checkout.id;
-    })
-    post(`/api/checkouts/:checkoutId`, idCheckout);
+    }).catch(error => console.error('Error:', error));
+    post(`/api/checkouts/:checkoutId`, idCheckout)
     modalConfirm();
 }
 
