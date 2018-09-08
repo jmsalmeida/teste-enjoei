@@ -1,0 +1,122 @@
+.overlay-full {
+    position: absolute;
+    width: 100%;
+    height: 103%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 2000;
+    display: none;
+}
+
+.enjoei-checkout > .container > div {
+    margin: 20px 0 20px 0;
+}
+
+#price-off, #coupon {
+    color: #FF6872;
+}
+
+.enjoei-product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enjoei-product-image img{
+    width: 120px;
+    border-radius: 2px;
+}
+
+.radios-coupons > div {
+    margin: 30px 0 0 0;
+}
+
+.radios-coupons #price-off{
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+}
+
+.enjoei-checkout-resume {
+    display: flex;
+    flex-direction: column;
+}
+
+.enjoei-checkout-resume > div{
+    display: flex;
+}
+
+.enjoei-checkout-resume span {
+    margin-bottom: 30px;
+}
+
+.resume-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-left #total {
+    font-weight: 700;
+}
+
+.resume-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.checkout-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px;
+    /* padding: 10px 0; */
+    border-top: 1px solid #eeeded;
+}
+
+.checkout-buttons button:nth-child(1) {
+    color: #FF6872;
+    background-color: #FFFFFF;
+}
+
+.checkout-buttons button:nth-child(2) {
+    background-color: #FF6872;
+    color: white;
+}
+
+/* ------------ MODAL ------------------ */
+.modal-alert {
+    text-align: center;
+    position: absolute;
+    z-index: 3000;
+    bottom: 30%;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 4%;
+    height: 200px;
+    display: none;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.modal-alert > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-icon{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.modal-text button {
+    background-color: #FF6872;
+    color: white;
+}

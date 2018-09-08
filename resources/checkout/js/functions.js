@@ -60,14 +60,22 @@ function calcTotalPrice(total, descount) {
     return total;
 }
 
+function overlayOn(){
+    overlayBody.style.display = `block`;
+}
+
 function modalConfirm() {
+    overlayOn();
+    cartIcon.style.color = `#7cf41a`;
     modalAlert.style.display = `flex`;
     modalTitle.innerHTML = `compra confirmada`;
     modalText.innerHTML = `enviaremos atualizações sobre\n o pedido para o seu e-mail`
 }
 
 function modalCancel() {
+    overlayOn();
     modalAlert.style.display = `flex`;
+    cartIcon.style.color = `#f2941a`;
     modalTitle.innerHTML = `compra cancelada`;
     modalText.innerHTML = `o pedido não foi enviado\n e você não será cobrado`
 }

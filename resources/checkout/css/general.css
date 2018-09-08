@@ -3,7 +3,8 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 10pt;
-    color: #7D7976
+    color: #7D7976;
+    position: relative;
 }
 
 h3 {
@@ -30,79 +31,7 @@ header img {
     width: 50px;
 }
 
-.enjoei-checkout > .container > div {
-    margin: 20px 0 20px 0;
-}
-
-#price-off, #coupon {
-    color: #FF6872;
-}
-
-.enjoei-product-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.enjoei-product-image img{
-    width: 120px;
-    border-radius: 2px;
-}
-
-.radios-coupons > div {
-    margin: 30px 0 0 0;
-}
-
-.radios-coupons #price-off{
-    display: inline-block;
-    position: absolute;
-    right: 30px;
-}
-
-.radio-item {
-    display: flex;
-    align-items: center;
-}
-
-.enjoei-checkout-resume {
-    display: flex;
-    flex-direction: column;
-}
-
-.enjoei-checkout-resume > div{
-    display: flex;
-}
-
-.enjoei-checkout-resume span {
-    margin-bottom: 30px;
-}
-
-.resume-right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.resume-left #total {
-    font-weight: 700;
-}
-
-.resume-left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.checkout-buttons {
-    display: flex;
-    justify-content: center;
-    margin: 20px 10px;
-    /* padding: 10px 0; */
-    border-top: 1px solid #eeeded;
-}
-
-.checkout-buttons button {
+button {
     margin: 10px 5px 0 5px;
     width: 50%;
     height: 50px;
@@ -110,40 +39,6 @@ header img {
     border: none;
     box-shadow: 1px 5px #eeeded;
     cursor: pointer;
-}
-
-.checkout-buttons button:nth-child(1) {
-    color: #FF6872;
-    background-color: #FFFFFF;
-}
-
-.checkout-buttons button:nth-child(2) {
-    background-color: #FF6872;
-    color: white;
-}
-
-/* ------------ MODAL ------------------ */
-.modal-alert {
-    text-align: center;
-    position: absolute;
-    z-index: 999;
-    bottom: 30%;
-    border-radius: 5px;
-    background-color: white;
-    margin: 0 4%;
-    height: 200px;
-    display: none;
-    align-items: center;
-}
-
-.modal-alert > .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.modal-icon{
-    margin-bottom: 30px;
 }
 
 /* ------------ RADIO INPUTS  ------------------ */

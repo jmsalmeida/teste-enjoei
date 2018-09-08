@@ -13,6 +13,8 @@ const confirmBtn = document.querySelector(`#confirm`);
 const cancelBtn = document.querySelector(`#cancel`);
 const modalTitle = document.querySelector(`.modal-text span`);
 const modalText = document.querySelector(`.modal-text p`);
+const overlayBody = document.querySelector(`.overlay-full`);
+const cartIcon = document.querySelector(`#cart-icon i`);
 
 buildCheckout();
 
