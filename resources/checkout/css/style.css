@@ -1,41 +1,64 @@
 body{
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 14pt;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
-    padding: 0 2%;
+    padding: 0 30px;
 }
+
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeded;
 }
 
 header img {
-    width: 80px;
+    width: 50px;
 }
 
 .enjoei-checkout > .container > div {
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .enjoei-product-image {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .enjoei-product-image img{
-    width: 200px;
+    width: 120px;
+    border-radius: 2px;
 }
 
-/* .enjoei-checkout-coupons > div{
-    display: flex;
-    flex-direction: column;
-} */
+.radios-coupons > div {
+    padding: 10px 0;
+}
+
+.radios-coupons #price-off{
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+}
 
 .enjoei-checkout-resume {
+    display: flex;
+    flex-direction: column;
+}
+
+.enjoei-checkout-resume > div{
     display: flex;
 }
 
@@ -59,6 +82,19 @@ header img {
 
 .checkout-buttons button {
     margin: 0 5px;
+    width: 300px;
+    height: 50px;
+    border-radius: 2px;
+    border: none;
+}
+
+.checkout-buttons button:nth-child(1) {
+    color: #FF6872
+}
+
+.checkout-buttons button:nth-child(2) {
+    background-color: #FF6872;
+    color: white;
 }
 
 .modal-alert {
