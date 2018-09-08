@@ -6,6 +6,7 @@ const originalPrice = document.querySelector(`#originalPrice`);
 const coupon = document.querySelector(`#coupon`);
 const shipping = document.querySelector(`#shipping`);
 const totalPrice = document.querySelector(`#total`);
+const radios = document.querySelectorAll(`.container-radio input`)
 const radioNot = document.querySelector(`#not-use-coupon`);
 const radioCoupon = document.querySelector(`#use-coupon`);
 const modalAlert = document.querySelector(`.modal-alert`);
@@ -20,5 +21,4 @@ buildCheckout();
 
 confirmBtn.onclick = sendPost;
 cancelBtn.onclick = modalCancel;
-
 
