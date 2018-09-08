@@ -36,12 +36,20 @@
       <div class="enjoei-checkout-coupons">
         <h3>cupons</h3>
         <div class="radios-coupons">
-          <div>
-            <input id="not-use-coupon" type="radio" name="coupon">
+          <div class="radio-item">
+              <label class="container-radio">
+                  <input id="not-use-coupon" type="radio" name="coupon">
+                  <span class="checkmark"></span>
+                </label>
+            <!-- <input id="not-use-coupon" type="radio" name="coupon"> -->
             <span>não usar cupom</span>
           </div>
-          <div>
-            <input id="use-coupon" type="radio" name="coupon">
+          <div class="radio-item">
+              <label class="container-radio">
+                  <input id="use-coupon" type="radio" checked="checked" name="coupon">
+                  <span class="checkmark"></span>
+                </label>
+            <!-- <input id="use-coupon" type="radio" name="coupon"> -->
             <span id="descountTitle"></span>
             <span id="price-off"></span>
           </div>
@@ -65,11 +73,10 @@
           </div>
         </div>
       </div>
-
-      <div class="checkout-buttons">
-        <button id="cancel">cancelar</button>
-        <button id="confirm">confirmar</button>
-      </div>
+    </div>
+    <div class="checkout-buttons">
+      <button id="cancel">cancelar</button>
+      <button id="confirm">confirmar</button>
     </div>
   </section>
 
