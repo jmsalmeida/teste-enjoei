@@ -16,7 +16,7 @@ const modalText = document.querySelector(`.modal-text p`);
 
 buildCheckout();
 
-confirmBtn.onclick = modalConfirm;
+confirmBtn.onclick = sendPost;
 cancelBtn.onclick = modalCancel;
 
 

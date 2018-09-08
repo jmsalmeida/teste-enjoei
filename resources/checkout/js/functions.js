@@ -13,6 +13,18 @@ function get(endpoint) {
     });
 }
 
+function post(endpoint, data){
+    fetch(apiUrl + endpoint, {
+        headers:{
+            "Content-Type": "application/json"
+        },
+        method: "POST",
+        body: JSON.stringify(data)
+    }).then(response => {
+        return response.json()
+    });
+}
+
 function buildCheckout() {
     get('/api/checkouts/:checkoutId').then(dados => {
         productImage.src = dados.product.image;
@@ -21,8 +33,17 @@ function buildCheckout() {
         originalPrice.innerHTML = `R$ ${dados.product.price.toFixed(2)}`;
         coupon.innerHTML = addCouponCheckout(dados);
         shipping.innerHTML = `R$ ${dados.checkout.shippingPrice.toFixed(2)}`;
-        totalPrice.innerHTML = `R$ ` + calcTotalPrice(dados.checkout.totalPrice, dados.checkout.availableCoupons[0].discount)
+        totalPrice.innerHTML = `R$ ` + calcTotalPrice(dados.checkout.totalPrice, dados.checkout.availableCoupons[0].discount).toFixed(2);
     });
+}
+
+function sendPost(){
+    let idCheckout;
+    get(`/api/checkouts/:checkoutId`).then(data => {
+        idCheckout = data.checkout.id;
+    })
+    post(`/api/checkouts/:checkoutId`, idCheckout);
+    modalConfirm();
 }
 
 function addCouponCheckout(dados) {
@@ -36,7 +57,7 @@ function calcTotalPrice(total, descount) {
     if (radioCoupon.checked === true) {
         return total - descount;
     }
-    return total.toFixed(2);
+    return total;
 }
 
 function modalConfirm() {
