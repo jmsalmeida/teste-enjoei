@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- JavaScript -->
+  <script src="../js/functions.js"></script>
+  <script defer src="../js/script.js"></script>
+  
   <title>Enjoei</title>
 </head>
-<body>
 
+<body>
+  <header>
+    <img src="../images/enjoei-logo.png" alt="logo-enjoei" title="logo responsivo enjoei">
+  </header>
+
+  <section class="enjoei-checkout">
+    <div class="container">
+      <div class="enjoei-product-image">
+        <img src="" alt="">
+      </div>
+
+      <div class="enjoei-checkout-coupons">
+        <div>
+          <div>
+            <input id="not-use-coupon" type="radio" name="coupon">
+            <span>não usar cupom</span>
+          </div>
+          <div>
+            <input id="use-coupon" type="radio" name="coupon">
+            <span id="descountTitle"></span>
+            <span id="price-off"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="enjoei-checkout-resume">
+        <div class="resume-right">
+          <span>valor original</span>
+          <span>cupom</span>
+          <span>frete</span>
+          <span>total</span>
+        </div>
+        <div class="resume-left">
+          <span id="originalPrice"></span>
+          <span id="coupon"></span>
+          <span id="shipping"></span>
+          <span id="total"></span>
+        </div>
+      </div>
+
+      <div class="checkout-buttons">
+        <button id="cancel">cancelar</button>
+        <button id="confirm">confirmar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal-alert">
+    <div class="container">
+      <div class="modal-icon">
+        <span><i class="fas fa-shopping-cart"></i></span>
+      </div>
+      <div class="modal-text">
+        <span></span>
+        <p></p>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
