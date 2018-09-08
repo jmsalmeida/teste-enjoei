@@ -13,9 +13,9 @@ function get(endpoint) {
     });
 }
 
-function post(endpoint, data){
+function post(endpoint, data) {
     fetch(apiUrl + endpoint, {
-        headers:{
+        headers: {
             "Content-Type": "application/json"
         },
         method: "POST",
@@ -37,7 +37,7 @@ function buildCheckout() {
     });
 }
 
-function sendPost(){
+function sendPost() {
     let idCheckout;
     get(`/api/checkouts/:checkoutId`).then(data => {
         idCheckout = data.checkout.id;
@@ -60,7 +60,7 @@ function calcTotalPrice(total, descount) {
     return total;
 }
 
-function overlayOn(){
+function overlayOn() {
     overlayBody.style.display = `block`;
 }
 

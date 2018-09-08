@@ -10,8 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
   <!-- CSS -->
   <link rel="stylesheet" href="../css/checkout.css">
   <link rel="stylesheet" href="../css/general.css">
@@ -20,7 +21,7 @@
   <!-- JavaScript -->
   <script src="../js/functions.js"></script>
   <script defer src="../js/script.js"></script>
-  
+
   <title>Enjoei</title>
 </head>
 
@@ -40,19 +41,17 @@
         <h3>cupons</h3>
         <div class="radios-coupons">
           <div class="radio-item">
-              <label class="container-radio">
-                  <input id="not-use-coupon" type="radio" name="coupon">
-                  <span class="checkmark"></span>
-                </label>
-            <!-- <input id="not-use-coupon" type="radio" name="coupon"> -->
+            <label class="container-radio">
+              <input id="not-use-coupon" type="radio" name="coupon" onClick="window.location.reload()">
+              <span class="checkmark"></span>
+            </label>
             <span>não usar cupom</span>
           </div>
           <div class="radio-item">
-              <label class="container-radio">
-                  <input id="use-coupon" type="radio" checked="checked" name="coupon">
-                  <span class="checkmark"></span>
-                </label>
-            <!-- <input id="use-coupon" type="radio" name="coupon"> -->
+            <label class="container-radio">
+              <input checked="checked" id="use-coupon" type="radio" name="coupon" onClick="window.location.reload()">
+              <span class="checkmark"></span>
+            </label>
             <span id="descountTitle"></span>
             <span id="price-off"></span>
           </div>
