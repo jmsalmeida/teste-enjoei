@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   
@@ -31,13 +34,22 @@
       </div>
 
       <div class="enjoei-checkout-coupons">
-        <div>
-          <div>
-            <input id="not-use-coupon" type="radio" name="coupon">
+        <h3>cupons</h3>
+        <div class="radios-coupons">
+          <div class="radio-item">
+              <label class="container-radio">
+                  <input id="not-use-coupon" type="radio" name="coupon">
+                  <span class="checkmark"></span>
+                </label>
+            <!-- <input id="not-use-coupon" type="radio" name="coupon"> -->
             <span>não usar cupom</span>
           </div>
-          <div>
-            <input id="use-coupon" type="radio" name="coupon">
+          <div class="radio-item">
+              <label class="container-radio">
+                  <input id="use-coupon" type="radio" checked="checked" name="coupon">
+                  <span class="checkmark"></span>
+                </label>
+            <!-- <input id="use-coupon" type="radio" name="coupon"> -->
             <span id="descountTitle"></span>
             <span id="price-off"></span>
           </div>
@@ -45,24 +57,26 @@
       </div>
 
       <div class="enjoei-checkout-resume">
-        <div class="resume-right">
-          <span>valor original</span>
-          <span>cupom</span>
-          <span>frete</span>
-          <span>total</span>
-        </div>
-        <div class="resume-left">
-          <span id="originalPrice"></span>
-          <span id="coupon"></span>
-          <span id="shipping"></span>
-          <span id="total"></span>
+        <h3>resumo</h3>
+        <div>
+          <div class="resume-right">
+            <span>valor original</span>
+            <span>cupom</span>
+            <span>frete</span>
+            <span>total</span>
+          </div>
+          <div class="resume-left">
+            <span id="originalPrice"></span>
+            <span id="coupon"></span>
+            <span id="shipping"></span>
+            <span id="total"></span>
+          </div>
         </div>
       </div>
-
-      <div class="checkout-buttons">
-        <button id="cancel">cancelar</button>
-        <button id="confirm">confirmar</button>
-      </div>
+    </div>
+    <div class="checkout-buttons">
+      <button id="cancel">cancelar</button>
+      <button id="confirm">confirmar</button>
     </div>
   </section>
 
