@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  
   <!-- CSS -->
   <link rel="stylesheet" href="../css/style.css">
 
@@ -27,15 +30,15 @@
         <img src="" alt="">
       </div>
 
-      <div class="enjoei-checkout-cupons">
+      <div class="enjoei-checkout-coupons">
         <div>
           <div>
-            <input type="radio">
+            <input id="not-use-coupon" type="radio" name="coupon">
             <span>não usar cupom</span>
           </div>
           <div>
-            <input type="radio">
-            <span>black friday</span>
+            <input id="use-coupon" type="radio" name="coupon">
+            <span id="descountTitle"></span>
             <span id="price-off"></span>
           </div>
         </div>
@@ -49,16 +52,28 @@
           <span>total</span>
         </div>
         <div class="resume-left">
-          <span>R$120.00</span>
-          <span>- R$12.00</span>
-          <span>R$20.00</span>
-          <span>R$108.00</span>
+          <span id="originalPrice"></span>
+          <span id="coupon"></span>
+          <span id="shipping"></span>
+          <span id="total"></span>
         </div>
       </div>
 
       <div class="checkout-buttons">
-        <button>cancelar</button>
-        <button>confirmar</button>
+        <button id="cancel">cancelar</button>
+        <button id="confirm">confirmar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal-alert">
+    <div class="container">
+      <div class="modal-icon">
+        <span><i class="fas fa-shopping-cart"></i></span>
+      </div>
+      <div class="modal-text">
+        <span></span>
+        <p></p>
       </div>
     </div>
   </section>
